@@ -1,24 +1,43 @@
 {
-  "name": "next-tutorial",
+  "name": "next-mui-apollo-example",
+  "description": "example project using NextJS, Material UI and Apollo Client",
+  "author": "Gregory Valdez @ghvaldez",
+  "license": "ISC",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3020",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate": "graphql-codegen",
+    "postinstall--fixThis": "npm run generate"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.0-rc.2",
+    "@apollo/experimental-nextjs-app-support": "^0.11.2",
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/icons-material": "^5.16.5",
+    "@mui/material": "^5.16.5",
+    "@mui/material-nextjs": "^5.16.4",
+    "graphql": "^16.9.0",
+    "next": "14.2.5",
+    "node-cron": "^2.0.3",
+    "prop-types": "^15.8.1",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/client-preset": "^4.3.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "typescript": "^5"
   }
 }
